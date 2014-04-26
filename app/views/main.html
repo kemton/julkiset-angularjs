@@ -1,36 +1,55 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">julkiset angularjs</h3>
-</div>
-
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
+<div class="container-fluid">
+        <div class="row-fluid">
+                <div class="span6 offset3">
+                        <form class="form-horizontal" ng-controller="MainCtrl">
+                                <fieldset>
+                                        <legend>Search route</legend>
+                                        <div class="control-group">
+                                                <label class="control-label">From:</label>
+                                                <div class="controls">
+                                                        <input type="text" ng-model="from" placeholder="From" />
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="control-group">
+                                                        <label class="control-label">To:</label>
+                                                <div class="controls">
+                                                        <input type="text" ng-model="to" placeholder="To" />
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="control-group">
+                                                <div class="controls">
+                                                        <label class="radio">
+                                                                <input type="radio" ng-model="timetype" name="time_method" value="departure" checked /> Departure time
+                                                        </label>
+                                                        <label class="radio">
+                                                                <input type="radio" ng-model="timetype" name="time_method" value="arrival" /> Arrival time
+                                                        </label>
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="control-group">
+                                                <label class="control-label">Time:</label>
+                                                <div class="controls">
+                                                        <input type="text" ng-model="time" placeholder="Time" />
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="control-group">
+                                                <label class="control-label">Date:</label>
+                                                <div class="controls">
+                                                        <input type="text" ng-model="date" placeholder="Date" />
+                                                </div>
+                                        </div>
+                                        
+                                        <div class="control-group">
+                                                <div class="controls">
+                                                        <button type="submit" class="btn-primary">Search</button>
+                                                </div>
+                                        </div>
+                                </fieldset>
+                        </form>
+                </div>
+        </div>
 </div>

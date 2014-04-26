@@ -11,5 +11,8 @@ angular.module('julkisetAngularjsApp', [
       .when '/',
         templateUrl: 'views/main.html'
         controller: 'MainCtrl'
+      .when '/route',
+        templateUrl: 'views/route.html'
+        controller: 'RouteCtrl'
       .otherwise
         redirectTo: '/'
