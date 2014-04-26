@@ -1,7 +1,7 @@
 <div class="container-fluid">
         <div class="row-fluid">
                 <div class="span6 offset3">
-                        <form class="form-horizontal" ng-controller="MainCtrl">
+                        <form class="form-horizontal" ng-submit="submitForm()" ng-controller="MainCtrl">
                                 <fieldset>
                                         <legend>Search route</legend>
                                         <div class="control-group">
@@ -21,10 +21,10 @@
                                         <div class="control-group">
                                                 <div class="controls">
                                                         <label class="radio">
-                                                                <input type="radio" ng-model="timetype" name="time_method" value="departure" checked /> Departure time
+                                                                <input type="radio" ng-model="time_method" name="time_method" value="departure" checked /> Departure time
                                                         </label>
                                                         <label class="radio">
-                                                                <input type="radio" ng-model="timetype" name="time_method" value="arrival" /> Arrival time
+                                                                <input type="radio" ng-model="time_method" name="time_method" value="arrival" /> Arrival time
                                                         </label>
                                                 </div>
                                         </div>
