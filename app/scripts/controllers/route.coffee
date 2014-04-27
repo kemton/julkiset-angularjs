@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('julkisetAngularjsApp')
-	.controller 'RouteCtrl', ($scope, $routeParams, $http, HslApi) ->
+	.controller 'RouteCtrl', ($scope, $routeParams, $http, HslApi, Route) ->
 		$scope.fromLocationList = null;
 		$scope.toLocationList = null;
 
@@ -28,10 +28,10 @@ angular.module('julkisetAngularjsApp')
 			backdropFade: true,
 			dialogFade:true
 
-		#$scope.saveLocation = (method, location) ->
-		#	if method == "from"
-		#		Route.setFromLocation(location);
-		#	else if method == "to"
-		#		Route.setToLocation(location);
-		#
-		#	$scope.closeModal();
+		$scope.saveLocation = (method, location) ->
+			if method == "from"
+				Route.setFromLocation(location)
+			else if method == "to"
+				Route.setToLocation(location)
+
+			$scope.closeModal();
