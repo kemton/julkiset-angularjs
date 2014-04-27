@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span6 offset3">
+			<ul>
+				<li ng-repeat="row in fromRouteList">
+					<p>{{row.name}}</p>
+				</li>
+			</ul>
+		</div>
+		<div class="span3">
+			<ul>
+				<li ng-repeat="row in toRouteList">
+					<p>{{row.name}}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div modal="chooseLocationModalOpen" close="close()" options="options">
+	<div class="modal-header">
+		<h3>Valitse kohde:</h3>
+	</div>
+	<div class="modal-body">
+		<ul>
+			<li ng-repeat="row in locationsList">
+				<p ng-click="saveLocation(locationMethod, row.name)">
+					{{row.name}}
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-warning cancel" ng-click="closeModal()">Cancel</button>
+	</div>
+</div>

@@ -4,7 +4,8 @@ angular.module('julkisetAngularjsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'config'
 ])
   .config ($routeProvider) ->
     $routeProvider
