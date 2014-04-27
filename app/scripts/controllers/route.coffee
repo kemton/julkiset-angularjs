@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('julkisetAngularjsApp')
+angular.module('julkisetApp')
 	.controller 'RouteCtrl', ($scope, $routeParams, $http, HslApi, Route) ->
 		$scope.fromLocationList = null;
 		$scope.toLocationList = null;

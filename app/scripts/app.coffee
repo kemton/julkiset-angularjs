@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('julkisetAngularjsApp', [
+angular.module('julkisetApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',

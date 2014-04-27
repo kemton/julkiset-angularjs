@@ -3,7 +3,7 @@
 describe 'Controller: RouteCtrl', () ->
 
   # load the controller's module
-  beforeEach module 'julkisetAngularjsApp'
+  beforeEach module 'julkisetApp'
 
   RouteCtrl = {}
   scope = {}

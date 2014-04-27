@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('julkisetAngularjsApp')
+angular.module('julkisetApp')
 	.service 'HslApi', ($http, ENV) ->
 		apiProxy = 'http://jsonp.jit.su/?url=' # Hsl Endpoint API not support cors.. stupid thing but I have to do in that way
 		url = apiProxy + encodeURIComponent(ENV.apiEndpoint + '?user=' + ENV.username + '&pass=' + ENV.password + '&format=json')
