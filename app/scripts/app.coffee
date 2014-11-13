@@ -11,9 +11,9 @@ angular.module('julkisetApp', [
     $routeProvider
       .when '/',
         templateUrl: 'views/main.html'
-        controller: 'MainCtrl'
+        controller: 'MainController'
       .when '/route/:from/:to/:date/:time/:time_method',
         templateUrl: 'views/route.html'
-        controller: 'RouteCtrl'
+        controller: 'RouteController'
       .otherwise
         redirectTo: '/'
